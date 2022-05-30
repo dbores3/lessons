@@ -45,7 +45,7 @@ function solution($A, $K) {
         //If the value is empty, it doesn't do the cycling
         if(!empty($A))
             //Gets the last element of the array & prepends it into the beginning
-            array_unshift($A, array_pop($A)); //array_unshift prepends the last element into the beginning & array_pop gets the last element
+            array_unshift($A, array_pop($A)); //array_unshift prepends the last element into the beginning & array_pop pops & gets the last element
     }
     return $A;
 }
