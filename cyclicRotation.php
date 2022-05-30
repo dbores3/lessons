@@ -40,8 +40,12 @@ In your solution, focus on correctness. The performance of your solution will no
 // print "this is a debug message\n";
 
 function solution($A, $K) {
+    //Does the cycling as many times as $K
     for($i=0; $i<$K; $i++){
-        array_unshift($A, array_pop($A));
+        //If the value is empty, it doesn't do the cycling
+        if(!empty($A))
+            //Gets the last element of the array & prepends it into the beginning
+            array_unshift($A, array_pop($A)); //array_unshift prepends the last element into the beginning & array_pop gets the last element
     }
     return $A;
 }
