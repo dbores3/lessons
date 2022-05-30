@@ -1,2 +1,2 @@
 # lessons
-Just some exercises from Codility in PHP, JS & PYTHON3
+Just some exercises from Codility in PHP, JS & PY
