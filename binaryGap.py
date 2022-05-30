@@ -20,8 +20,6 @@ N is an integer within the range [1..2,147,483,647].*/
 
 
 def solution(N):
-    # write your code in Python 3.6
-    #pass
     #Converts number into binary
     binary = format(N, 'b')
    
