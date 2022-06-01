@@ -31,9 +31,9 @@ all but one of the values in A occur an even number of times.
 """
 
 def solution(A):
-    #
+    #is going to take xor of a numnber with 0
     unique = 0
-    #checks every number in the array & only saves the only that is the same in bits
+    #checks every number in the array & erases all the repeated ones
     for value in A:
         #XOR bitwise operator(exclusive or)
         unique ^= value
