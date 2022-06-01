@@ -29,3 +29,13 @@ N is an odd integer within the range [1..1,000,000];
 each element of array A is an integer within the range [1..1,000,000,000];
 all but one of the values in A occur an even number of times.
 """
+
+def solution(A):
+    #
+    unique = 0
+    #checks every number in the array & only saves the only that is the same in bits
+    for value in A:
+        #XOR bitwise operator(exclusive or)
+        unique ^= value
+        
+    return unique
