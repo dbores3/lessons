@@ -31,11 +31,11 @@ all but one of the values in A occur an even number of times.
 */
 
 function solution($A) {
-    #is going to take xor of a numnber with 0
+    //is going to take xor of a numnber with 0
     $unique = 0;
-    #checks every number in the array & erases all the repeated ones
+    //checks every number in the array & erases all the repeated ones
     foreach($A as $value){
-        #XOR bitwise operator(exclusive or)
+        //XOR bitwise operator(exclusive or)
         $unique ^= $value;
     }
     return $unique;
