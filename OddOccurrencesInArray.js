@@ -32,9 +32,9 @@ function solution(A) {
     //is going to take xor of a numnber with 0
     unique = 0
     //checks every number in the array & erases all the repeated ones
-    for(i=0;i<A.length;i++){
+    A.forEach((element) => { 
         //XOR bitwise operator(exclusive or)
-        unique ^= i
-    }
+        unique ^= element
+    })
     return unique
 }
