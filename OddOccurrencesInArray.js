@@ -27,3 +27,14 @@ Write an efficient algorithm for the following assumptions:
 N is an odd integer within the range [1..1,000,000];
 each element of array A is an integer within the range [1..1,000,000,000];
 all but one of the values in A occur an even number of times.*/
+
+function solution(A) {
+    //is going to take xor of a numnber with 0
+    unique = 0
+    //checks every number in the array & erases all the repeated ones
+    for(i=0;i<A.length;i++){
+        //XOR bitwise operator(exclusive or)
+        unique ^= i
+    }
+    return unique
+}
