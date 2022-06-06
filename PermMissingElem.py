@@ -22,3 +22,10 @@ N is an integer within the range [0..100,000];
 the elements of A are all distinct;
 each element of array A is an integer within the range [1..(N + 1)].
 """
+def solution(A):
+    #Gets the length of the Array plus 1
+    N = len(A)+1
+    #Time complexity formula
+    result = (N * (N+1) // 2) - sum(A)
+    
+    return result
