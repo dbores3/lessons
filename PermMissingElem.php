@@ -22,9 +22,9 @@ N is an integer within the range [0..100,000];
 the elements of A are all distinct;
 each element of array A is an integer within the range [1..(N + 1)].*/
 function solution($A) {
-    #Gets the length of the Array plus 1
+    //Gets the length of the Array plus 1
     $N = count($A)+1;
-    #Time complexity formula
+    //Time complexity formula
     $result = intval(floor($N * ($N+1) / 2) - array_sum($A)); //trasnforms tthe result into integer
     
     return $result;
