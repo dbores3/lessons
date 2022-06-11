@@ -6,7 +6,7 @@ function solution(A) {
  //Total left sum on each interation
  leftSum = 0
  //Walks the whole array, except the last one
- for(let i=0; i< A.length; i++){
+ for(let i=0; i<A.length-1; i++){
     //Gets the actual value and adds it to the variable
     leftSum += A[i]
     //Time Complexity formula, compares to the last min Difference
