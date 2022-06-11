@@ -42,7 +42,7 @@ each element of array A is an integer within the range [−1,000..1,000]."""
 def solution(A):          
     #Sums all the values in the array
     sumArray = sum(A)
-    #Declares the variable with a initely large number, so when compares the min for the first time, there's no possible way of getting a higer value
+    #Declares the variable with a infinitely large number, so when compares the value for the first time, there's no possible way of getting a higher value
     minDifference = float('inf')
     #Total left sum on each iteration
     leftSum = 0
@@ -50,6 +50,6 @@ def solution(A):
     for i in A[:-1]:
         #Gets the actual value and adds it to the variable
         leftSum += i
-        #Time complexity formula, compares to
+        #Time complexity formula, compares to the last min difference
         minDifference = min(abs(sumArray - 2 * leftSum), minDifference) #The value needs to be absolute & min returns the lowest value
     return minDifference
